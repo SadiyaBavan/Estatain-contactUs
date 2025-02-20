@@ -66,6 +66,13 @@
 
             /* Navbar */
 
+            /* sparkals */
+            .flex-imgs-wrapper .banner-wrapper img {
+                left: 0px;
+                height: 30px;
+                width: 68.4px;
+            }
+
 
             /* toggle show */
             .show {
@@ -126,7 +133,7 @@
             .banner-wrapper img {
                 left: 50px;
                 height: 30px;
-                width: 53px;
+                width: 68.4px;
             }
 
 
@@ -225,7 +232,7 @@
 
             .footer-section-all {
                 padding: 30px 0;
-                gap: 40px;
+                /* gap: 40px; */
             }
 
             .sub-footer {
@@ -251,6 +258,11 @@
             .email-input {
                 width: 100%;
             }
+
+
+            .footer-ul {
+                margin-top: 15px;
+            }
         }
 
 
@@ -262,12 +274,13 @@
             .top-bar p {
                 padding-left: 16px;
             }
+
             .contact-us button {
                 padding: 14px 22px;
             }
 
             .banner-content {
-                padding: 90px 16px 50px 16px;
+                padding: 60px 16px 50px 16px;
             }
 
             .banner-content .title h2 {
@@ -277,8 +290,9 @@
 
             /* sparkles */
             .banner-content img {
-                padding-bottom: 20px;
                 left: 10px;
+                height: 30px;
+                width: 68.4px;
             }
 
             /* sparkles */
@@ -304,7 +318,7 @@
 
             .footer-section-all {
                 /* padding: 30px 0; */
-                gap: 20px;
+                /* gap: 20px; */
             }
 
             .main-footer {
@@ -319,5 +333,13 @@
             .all-button-wrapper button {
                 padding: 14px 20px;
                 width: 100%;
+            }
+
+            .sub-footer {
+                text-align: center;
+            }
+
+            .footer-ul {
+                gap: 16px;
             }
         }
