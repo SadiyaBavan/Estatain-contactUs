@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font link -->
+    <link rel="stylesheet" href="Assets/Font/font awesome/all.min.css">
+
+    <!-- Css link -->
+    <link rel="stylesheet" href="Assets/CSS/page.css">
+
+    <!-- Respon link -->
+    <link rel="stylesheet" href="Assets/CSS/responcive.css">
+</head>
+
+<body>
+    <!-- top bar -->
+    <div class="top-bar" id="cancelTopBar">
+        <p>✨Discover Your Dream Property with Estatein <a href="#">Learn More</a></p>
+        <button class="icon-btn" onclick="handleTopBar()"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke-width="1.5" width="34px" height="34px" stroke="currentColor"
+                class="cancel-btn ">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg></button>
+    </div>
+
+    <!-- navbar -->
+    <nav>
+        <div class="container">
+            <div class="icon">
+                <img src="Assets/imgs/Symbol.png" alt="estatein logo">
+                <p>Estatein</p>
+            </div>
+            <div class="collapes" id="toggle">
+                <ul class="nav-ul">
+                    <li>Home</li>
+                    <li>
+                        <div class="about-us">
+                            <div class="banner">
+                                <a href="#" class='butn butn__new'><span>About Us</span></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>Properties</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+            <div class="purple-btn">
+                <div class="banner">
+                    <a href="#" class='butn butn__new'><span>Contact Us</span></a>
+                </div>
+            </div>
+            <button class="button-responcive" onclick="handleToggle()">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M3.5 7.875C3.5 7.39175 3.89175 7 4.375 7H23.625C24.1082 7 24.5 7.39175 24.5 7.875C24.5 8.35825 24.1082 8.75 23.625 8.75H4.375C3.89175 8.75 3.5 8.35825 3.5 7.875ZM3.5 14C3.5 13.5168 3.89175 13.125 4.375 13.125H23.625C24.1082 13.125 24.5 13.5168 24.5 14C24.5 14.4832 24.1082 14.875 23.625 14.875H4.375C3.89175 14.875 3.5 14.4832 3.5 14ZM13.125 20.125C13.125 19.6418 13.5168 19.25 14 19.25H23.625C24.1082 19.25 24.5 19.6418 24.5 20.125C24.5 20.6082 24.1082 21 23.625 21H14C13.5168 21 13.125 20.6082 13.125 20.125Z"
+                        fill="white" />
+                </svg>
+
+
+
+            </button>
+        </div>
+    </nav>
+    <!-- /.navbar -->
+    <main>
+
+        <!-- Banner -->
+        <section>
+            <div class="banner-content">
+                <div class="title">
+                    <h2>Get in Touch with Estatein</h2>
+                    <span>Welcome to Estatein's Contact Us page. We're here to assist you with any inquiries, requests,
+                        or feedback you may have. Whether you're looking to buy or sell a property, explore investment
+                        opportunities, or simply want to connect, we're just a message away. Reach out to us, and let's
+                        start a conversation.</span>
+                </div>
+            </div>
+        </section>
+        <!-- /.Banner -->
+        <!-- contact Info -->
+        <section>
+            <div class="contact-info-wrapper">
+                <div class="contact-info-item"><img src="./Assets/imgs/msg-img.png" alt="massege">
+                    <span><span>info@estatein.com</span></span>
+                </div>
+                <div class="contact-info-item">
+                    <img src="./Assets/imgs/call-img.png" alt="call">
+                    <span>+1 (123) 456-7890</span>
+                </div>
+                <div class="contact-info-item">
+                    <img src="./Assets/imgs/location-img.png" alt="location">
+                    <span>Main Headquarters</span>
+                </div>
+                <div class="contact-info-item">
+                    <img src="./Assets/imgs/eastitin-logo.png" alt="eastitin">
+                    <span>
+                        <a href="">Instagram</a>
+                        <a href="">LinkedIn</a>
+                        <a href="">Facebook</a>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <!--./ contact Info -->
+
+        <!-- Banner -->
+        <section>
+            <div class="banner-wrapper">
+                <div class="banner-content">
+                    <img src="./Assets/imgs/sparkles.png" alt="">
+                    <div class="title">
+                        <h2>Let's Connect</h2>
+                        <span>We're excited to connect with you and learn more about your real estate goals. Use the
+                            form below to get in touch with Estatein. Whether you're a prospective client, partner, or
+                            simply curious about our services, we're here to answer your questions and provide the
+                            assistance you need.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.Banner -->
+
+
+        <!-- form -->
+        <form>
+            <div class="form-wrapper">
+                <div class="input-control">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="" id="first-name" placeholder="Enter First Name">
+                </div>
+                <div class="input-control">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="" id="last-name" placeholder="Enter Last Name">
+                </div>
+
+                <div class="input-control">
+                    <label for="email">Email</label>
+                    <input type="text" name="" id="email" placeholder="Enter your Email">
+                </div>
+                <div class="input-control">
+                    <label for="phone">Phone</label>
+                    <input type="text" name="" id="phone" placeholder="Enter Phone Number">
+                </div>
+                <div class="input-control">
+                    <label for="inquiry-type">Inquiry Type</label>
+                    <input type="text" name="" id="inquiry-type" placeholder="Select Inquiry Type">
+                </div>
+                <div class="input-control">
+                    <label for="about-us">How Did You Hear About Us?</label>
+                    <input type="text" name="" id="about-us" placeholder="Select">
+                </div>
+
+
+            </div>
+
+            <div class="input-control" style="margin-top: 20px;">
+                <label for="message">Message</label>
+                <!-- <textarea  name="" id="message" placeholder="Enter your Message here.."></textarea> -->
+                <textarea name="" id="" placeholder="Enter your Message Here.." rows="4" cols="20"></textarea>
+            </div>
+
+            <div class="privacy-policy-wrapper">
+                <div class="input-control checkbox-control">
+                    <input type="checkbox" class="privacy-policy" name="" id="privacyPolicy" placeholder="Select">
+                    <label for="privacyPolicy">I agree with <a href="#">Terms of Use</a> and <a href="#">Privacy
+                            Policy</a></label>
+                </div>
+
+                <div class="purple-btn width-100">
+                    <div class="banner">
+                        <a href="#" class='butn butn__new'><span>Send Your Message</span></a>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- ./form -->
+
+        <!-- Location -->
+        <section>
+            <div class="banner-wrapper">
+                <div class="banner-content">
+                    <img src="./Assets/imgs/sparkles.png" alt="">
+                    <div class="title">
+                        <h2>Discover Our Office Locations</h2>
+                        <span>Estatein is here to serve you across multiple locations. Whether you're looking to meet
+                            our team, discuss real estate opportunities, or simply drop by <br>for a chat, we have
+                            offices conveniently located to serve your needs. Explore the categories below to find the
+                            Estatein office nearest to you</span>
+                    </div>
+                    <div class="all-button-wrapper">
+                        <button>All</button>
+                        <button>Regional</button>
+                        <button>International</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.Location -->
+
+        <!-- Main Headquarters -->
+        <div class="main-header-wrapper">
+            <div class="info-wrapper">
+                <p>Main Headquarters</p>
+                <h2>123 Estatein Plaza, City Center, Metropolis</h2>
+                <span class="description">Our main headquarters serve as the heart of Estatein. Located in the bustling
+                    city center, this is
+                    where our core team of experts operates, driving the excellence and innovation that define
+                    us.</span>
+                <div class="info-btn">
+                    <button><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.5 8.6691V17.25C1.5 18.9069 2.84315 20.25 4.5 20.25H19.5C21.1569 20.25 22.5 18.9069 22.5 17.25V8.6691L13.5723 14.1631C12.6081 14.7564 11.3919 14.7564 10.4277 14.1631L1.5 8.6691Z"
+                                fill="white" />
+                            <path
+                                d="M22.5 6.90783V6.75C22.5 5.09315 21.1569 3.75 19.5 3.75H4.5C2.84315 3.75 1.5 5.09315 1.5 6.75V6.90783L11.2139 12.8856C11.696 13.1823 12.304 13.1823 12.7861 12.8856L22.5 6.90783Z"
+                                fill="white" />
+                        </svg>
+                        <span class="white-space">info@estatein.com</span>
+                    </button>
+
+                    <button>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.5 4.5C1.5 2.84315 2.84315 1.5 4.5 1.5H5.87163C6.732 1.5 7.48197 2.08556 7.69064 2.92025L8.79644 7.34343C8.97941 8.0753 8.70594 8.84555 8.10242 9.29818L6.8088 10.2684C6.67447 10.3691 6.64527 10.5167 6.683 10.6197C7.81851 13.7195 10.2805 16.1815 13.3803 17.317C13.4833 17.3547 13.6309 17.3255 13.7316 17.1912L14.7018 15.8976C15.1545 15.2941 15.9247 15.0206 16.6566 15.2036L21.0798 16.3094C21.9144 16.518 22.5 17.268 22.5 18.1284V19.5C22.5 21.1569 21.1569 22.5 19.5 22.5H17.25C8.55151 22.5 1.5 15.4485 1.5 6.75V4.5Z"
+                                fill="white" />
+                        </svg>
+                        <span class="white-space"> +1 (123) 456-7890</span>
+                    </button>
+
+                    <button>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11.5397 22.351C11.57 22.3685 11.5937 22.3821 11.6105 22.3915L11.6384 22.4071C11.8613 22.5294 12.1378 22.5285 12.3608 22.4075L12.3895 22.3915C12.4063 22.3821 12.43 22.3685 12.4603 22.351C12.5207 22.316 12.607 22.265 12.7155 22.1982C12.9325 22.0646 13.2388 21.8676 13.6046 21.6091C14.3351 21.0931 15.3097 20.3274 16.2865 19.3273C18.2307 17.3368 20.25 14.3462 20.25 10.5C20.25 5.94365 16.5563 2.25 12 2.25C7.44365 2.25 3.75 5.94365 3.75 10.5C3.75 14.3462 5.76932 17.3368 7.71346 19.3273C8.69025 20.3274 9.66491 21.0931 10.3954 21.6091C10.7612 21.8676 11.0675 22.0646 11.2845 22.1982C11.393 22.265 11.4793 22.316 11.5397 22.351ZM12 13.5C13.6569 13.5 15 12.1569 15 10.5C15 8.84315 13.6569 7.5 12 7.5C10.3431 7.5 9 8.84315 9 10.5C9 12.1569 10.3431 13.5 12 13.5Z"
+                                fill="white" />
+                        </svg>
+                        <span class="white-space">Metropolis</span>
+                    </button>
+                </div>
+                <button class="Direction-button">Get Direction</button>
+            </div>
+
+            <div class="info-wrapper">
+                <p>Main Headquarters</p>
+                <h2>123 Estatein Plaza, City Center, Metropolis</h2>
+                <span class="description">Our main headquarters serve as the heart of Estatein. Located in the bustling
+                    city center, this is
+                    where our core team of experts operates, driving the excellence and innovation that define
+                    us.</span>
+                <div class="info-btn">
+                    <button>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.5 8.6691V17.25C1.5 18.9069 2.84315 20.25 4.5 20.25H19.5C21.1569 20.25 22.5 18.9069 22.5 17.25V8.6691L13.5723 14.1631C12.6081 14.7564 11.3919 14.7564 10.4277 14.1631L1.5 8.6691Z"
+                                fill="white" />
+                            <path
+                                d="M22.5 6.90783V6.75C22.5 5.09315 21.1569 3.75 19.5 3.75H4.5C2.84315 3.75 1.5 5.09315 1.5 6.75V6.90783L11.2139 12.8856C11.696 13.1823 12.304 13.1823 12.7861 12.8856L22.5 6.90783Z"
+                                fill="white" />
+                        </svg>
+                        <span class="white-space">info@estatein.com</span>
+                    </button>
+
+                    <button>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.5 4.5C1.5 2.84315 2.84315 1.5 4.5 1.5H5.87163C6.732 1.5 7.48197 2.08556 7.69064 2.92025L8.79644 7.34343C8.97941 8.0753 8.70594 8.84555 8.10242 9.29818L6.8088 10.2684C6.67447 10.3691 6.64527 10.5167 6.683 10.6197C7.81851 13.7195 10.2805 16.1815 13.3803 17.317C13.4833 17.3547 13.6309 17.3255 13.7316 17.1912L14.7018 15.8976C15.1545 15.2941 15.9247 15.0206 16.6566 15.2036L21.0798 16.3094C21.9144 16.518 22.5 17.268 22.5 18.1284V19.5C22.5 21.1569 21.1569 22.5 19.5 22.5H17.25C8.55151 22.5 1.5 15.4485 1.5 6.75V4.5Z"
+                                fill="white" />
+                        </svg>
+                        <span class="white-space">+1 (123) 456-7890</span>
+                    </button>
+
+                    <button>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11.5397 22.351C11.57 22.3685 11.5937 22.3821 11.6105 22.3915L11.6384 22.4071C11.8613 22.5294 12.1378 22.5285 12.3608 22.4075L12.3895 22.3915C12.4063 22.3821 12.43 22.3685 12.4603 22.351C12.5207 22.316 12.607 22.265 12.7155 22.1982C12.9325 22.0646 13.2388 21.8676 13.6046 21.6091C14.3351 21.0931 15.3097 20.3274 16.2865 19.3273C18.2307 17.3368 20.25 14.3462 20.25 10.5C20.25 5.94365 16.5563 2.25 12 2.25C7.44365 2.25 3.75 5.94365 3.75 10.5C3.75 14.3462 5.76932 17.3368 7.71346 19.3273C8.69025 20.3274 9.66491 21.0931 10.3954 21.6091C10.7612 21.8676 11.0675 22.0646 11.2845 22.1982C11.393 22.265 11.4793 22.316 11.5397 22.351ZM12 13.5C13.6569 13.5 15 12.1569 15 10.5C15 8.84315 13.6569 7.5 12 7.5C10.3431 7.5 9 8.84315 9 10.5C9 12.1569 10.3431 13.5 12 13.5Z"
+                                fill="white" />
+                        </svg>
+                        <span class="white-space">Metropolis</span>
+                    </button>
+                </div>
+                <button class="Direction-button">Get Direction</button>
+            </div>
+        </div>
+        <!-- /.Main Headquarters -->
+
+        <!-- Explore part -->
+        <div class="explore-main-wrapper">
+
+            <div class="explore-wrapper">
+                <div class="flex-imgs-wrapper">
+                    <img src="./Assets/imgs/Image (1).png" alt="">
+                    <img src="./Assets/imgs/Image (2).png" alt="">
+                </div>
+                <div class="flex-imgs-wrapper">
+                    <img src="./Assets/imgs/Image (3).png" alt="">
+                    <div class="inner-flex-imgs-row">
+                        <img src="./Assets/imgs/Image (4).png" alt="">
+                        <img src="./Assets/imgs/Image (5).png" alt="">
+                    </div>
+                </div>
+
+                <div class="flex-imgs-wrapper flex-direction-column">
+                    <div class="banner-wrapper width">
+                        <div class="banner-content">
+                            <img src="./Assets/imgs/sparkles.png" style="width: 80px;" alt="">
+                            <div class="title">
+                                <h2>Let's Connect</h2>
+                                <span>We're excited to connect with you and learn more about your real estate goals. Use
+                                    the
+                                    form below to get in touch with Estatein. Whether you're a prospective client,
+                                    partner, or
+                                    simply curious about our services, we're here to answer your questions and provide
+                                    the
+                                    assistance you need.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./Assets/imgs/Image (6).png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- /.Explore part -->
+
+        <!--second-last-part  -->
+        <section>
+            <div class="last-section-banner">
+                <div class="last-section-text">
+                    <h2>Start Your Real Estate Journey Today</h2>
+                    <span>Your dream property is just a click away. Whether you're looking for a new home, a strategic
+                        investment, or expert real estate advice, Estatein is here to assist you every step of the way.
+                        Take
+                        the first step towards your real estate goals and explore our available properties or get in
+                        touch
+                        with our team for personalized assistance.</span>
+                </div>
+                <div class="last-section-btn">
+                    <button>Explore Properties</button>
+                </div>
+            </div>
+        </section>
+        <!-- /.second-last-part  -->
+
+        <!-- footer -->
+        <footer>
+            <div class="main-footer">
+                <div class="logo">
+                    <div class="logo-section">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 48C10.7467 48 0 37.2533 0 24H24V48Z" fill="#703BF7" />
+                            <path d="M0 0C13.2533 0 24 10.7467 24 24H0V0Z" fill="#703BF7" />
+                            <path d="M24 48C37.2533 48 48 37.2533 48 24H24V48Z" fill="#703BF7" />
+                            <path d="M48 24C48 10.7467 37.2533 0 24 0V24H48Z" fill="#703BF7" />
+                        </svg>
+                        <h2>Estatein</h2>
+                    </div>
+                    <div class="email-section">
+                        <input type="email" placeholder="Enter yoyr email" class="email-input">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="email-svg">
+                            <path
+                                d="M17 7H18V8C18 8.26522 18.1054 8.51957 18.2929 8.70711C18.4804 8.89464 18.7348 9 19 9C19.2652 9 19.5196 8.89464 19.7071 8.70711C19.8946 8.51957 20 8.26522 20 8V7H21C21.2652 7 21.5196 6.89464 21.7071 6.70711C21.8946 6.51957 22 6.26522 22 6C22 5.73478 21.8946 5.48043 21.7071 5.29289C21.5196 5.10536 21.2652 5 21 5H20V4C20 3.73478 19.8946 3.48043 19.7071 3.29289C19.5196 3.10536 19.2652 3 19 3C18.7348 3 18.4804 3.10536 18.2929 3.29289C18.1054 3.48043 18 3.73478 18 4V5H17C16.7348 5 16.4804 5.10536 16.2929 5.29289C16.1054 5.48043 16 5.73478 16 6C16 6.26522 16.1054 6.51957 16.2929 6.70711C16.4804 6.89464 16.7348 7 17 7ZM21 11C20.7348 11 20.4804 11.1054 20.2929 11.2929C20.1054 11.4804 20 11.7348 20 12V18C20 18.2652 19.8946 18.5196 19.7071 18.7071C19.5196 18.8946 19.2652 19 19 19H5C4.73478 19 4.48043 18.8946 4.29289 18.7071C4.10536 18.5196 4 18.2652 4 18V8.41L9.88 14.3C10.4425 14.8618 11.205 15.1774 12 15.1774C12.795 15.1774 13.5575 14.8618 14.12 14.3L16.59 11.83C16.7783 11.6417 16.8841 11.3863 16.8841 11.12C16.8841 10.8537 16.7783 10.5983 16.59 10.41C16.4017 10.2217 16.1463 10.1159 15.88 10.1159C15.6137 10.1159 15.3583 10.2217 15.17 10.41L12.7 12.88C12.5131 13.0632 12.2618 13.1659 12 13.1659C11.7382 13.1659 11.4869 13.0632 11.3 12.88L5.41 7H13C13.2652 7 13.5196 6.89464 13.7071 6.70711C13.8946 6.51957 14 6.26522 14 6C14 5.73478 13.8946 5.48043 13.7071 5.29289C13.5196 5.10536 13.2652 5 13 5H5C4.20435 5 3.44129 5.31607 2.87868 5.87868C2.31607 6.44129 2 7.20435 2 8V18C2 18.7956 2.31607 19.5587 2.87868 20.1213C3.44129 20.6839 4.20435 21 5 21H19C19.7956 21 20.5587 20.6839 21.1213 20.1213C21.6839 19.5587 22 18.7956 22 18V12C22 11.7348 21.8946 11.4804 21.7071 11.2929C21.5196 11.1054 21.2652 11 21 11Z"
+                                fill="#999999" />
+                        </svg>
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="arrow-svg">
+                            <path
+                                d="M26.7843 3.22287C26.1593 2.58412 25.2343 2.34787 24.3718 2.59787L4.25928 8.40912C3.34928 8.66162 2.70428 9.38287 2.53053 10.2979C2.35303 11.2304 2.97303 12.4154 3.78303 12.9104L10.0718 16.7504C10.7168 17.1454 11.5493 17.0466 12.083 16.5116L19.2843 9.31037C19.6468 8.93412 20.2468 8.93412 20.6093 9.31037C20.9718 9.67162 20.9718 10.2604 20.6093 10.6354L13.3955 17.8366C12.8605 18.3716 12.7605 19.2016 13.1543 19.8479L16.9968 26.1604C17.4468 26.9091 18.2218 27.3354 19.0718 27.3354C19.1718 27.3354 19.2843 27.3354 19.3843 27.3216C20.3593 27.1979 21.1343 26.5341 21.4218 25.5966L27.3843 5.63537C27.6468 4.78537 27.4093 3.86037 26.7843 3.22287Z"
+                                fill="white" />
+                            <path opacity="0.4"
+                                d="M11.8145 23.928C12.1795 24.2942 12.1795 24.888 11.8145 25.2542L10.107 26.9605C9.92448 27.1442 9.68448 27.2355 9.44448 27.2355C9.20448 27.2355 8.96448 27.1442 8.78198 26.9605C8.41573 26.5942 8.41573 26.0017 8.78198 25.6355L10.4882 23.928C10.8545 23.563 11.4482 23.563 11.8145 23.928ZM10.8349 19.193C11.1999 19.5592 11.1999 20.153 10.8349 20.5192L9.12736 22.2255C8.94486 22.4092 8.70486 22.5005 8.46486 22.5005C8.22486 22.5005 7.98486 22.4092 7.80236 22.2255C7.43611 21.8592 7.43611 21.2667 7.80236 20.9005L9.50861 19.193C9.87486 18.828 10.4686 18.828 10.8349 19.193ZM6.13336 17.7025C6.49836 18.0687 6.49836 18.6625 6.13336 19.0287L4.42586 20.735C4.24336 20.9187 4.00336 21.01 3.76336 21.01C3.52336 21.01 3.28336 20.9187 3.10086 20.735C2.73461 20.3687 2.73461 19.7762 3.10086 19.41L4.80711 17.7025C5.17336 17.3375 5.76711 17.3375 6.13336 17.7025Z"
+                                fill="white" />
+                        </svg>
+
+                    </div>
+                </div>
+                <!-- home -->
+                <div class="footer-section-all">
+                    <div class="footer-sections">
+                        <ul class="footer-ul">
+                            <span>Home</span>
+                            <li>Hero Section</li>
+                            <li>Features</li>
+                            <li>Properties</li>
+                            <li>Testimonials</li>
+                            <li>FAQ’s</li>
+                        </ul>
+                    </div>
+                    <div class="footer-sections">
+                        <ul class="footer-ul">
+                            <span>About us</span>
+                            <li>Our Story</li>
+                            <li>Our Works</li>
+                            <li>How It Works</li>
+                            <li>Our Team</li>
+                            <li>Our Clients</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-sections">
+                        <ul class="footer-ul">
+                            <span>Properties</span>
+                            <li>Portfolio</li>
+                            <li>Categories</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-sections">
+                        <ul class="footer-ul">
+                            <span>Services</span>
+                            <li>Valuation Mastery</li>
+                            <li>Strategic Marketing</li>
+                            <li>Negotiation Wizardry</li>
+                            <li>Closing Success</li>
+                            <li>Property Management</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-sections">
+                        <ul class="footer-ul">
+                            <span>Contact Form</span>
+                            <li>Contact Form</li>
+                            <li>Our Offices</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-footer">
+                <div class="rights-section">
+                    <span>@2023 Estatein. All Rights Reserved.</span>
+                    <span>Terms & Conditions</span>
+                </div>
+                <div class="footer-logo">
+                    <!-- facebook -->
+                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="52" height="52" rx="26" fill="#141414" />
+                        <path
+                            d="M29.7432 17.984H31.9992V14.168C30.9069 14.0545 29.8094 13.9984 28.7112 14C25.4472 14 23.2152 15.992 23.2152 19.64V22.784H19.5312V27.056H23.2152V38H27.6312V27.056H31.3032L31.8552 22.784H27.6312V20.06C27.6312 18.8 27.9672 17.984 29.7432 17.984Z"
+                            fill="white" />
+                    </svg>
+
+                    <!-- /facebook -->
+                    <!-- linkedin -->
+                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="52" height="52" rx="26" fill="#141414" />
+                        <path
+                            d="M34.4705 15.9999H17.5305C17.3401 15.9973 17.151 16.0321 16.9741 16.1026C16.7972 16.173 16.6359 16.2776 16.4993 16.4104C16.3628 16.5432 16.2538 16.7016 16.1785 16.8765C16.1032 17.0514 16.0632 17.2395 16.0605 17.4299V34.5699C16.0632 34.7603 16.1032 34.9484 16.1785 35.1233C16.2538 35.2982 16.3628 35.4566 16.4993 35.5894C16.6359 35.7222 16.7972 35.8268 16.9741 35.8972C17.151 35.9676 17.3401 36.0025 17.5305 35.9999H34.4705C34.661 36.0025 34.85 35.9676 35.027 35.8972C35.2039 35.8268 35.3652 35.7222 35.5017 35.5894C35.6383 35.4566 35.7473 35.2982 35.8226 35.1233C35.8978 34.9484 35.9379 34.7603 35.9405 34.5699V17.4299C35.9379 17.2395 35.8978 17.0514 35.8226 16.8765C35.7473 16.7016 35.6383 16.5432 35.5017 16.4104C35.3652 16.2776 35.2039 16.173 35.027 16.1026C34.85 16.0321 34.661 15.9973 34.4705 15.9999ZM22.0905 32.7399H19.0905V23.7399H22.0905V32.7399ZM20.5905 22.4799C20.1768 22.4799 19.78 22.3155 19.4875 22.023C19.1949 21.7304 19.0305 21.3336 19.0305 20.9199C19.0305 20.5062 19.1949 20.1094 19.4875 19.8168C19.78 19.5243 20.1768 19.3599 20.5905 19.3599C20.8102 19.335 21.0327 19.3567 21.2434 19.4238C21.4541 19.4908 21.6483 19.6016 21.8132 19.7489C21.9781 19.8961 22.1101 20.0766 22.2004 20.2784C22.2908 20.4802 22.3375 20.6988 22.3375 20.9199C22.3375 21.141 22.2908 21.3596 22.2004 21.5614C22.1101 21.7632 21.9781 21.9437 21.8132 22.0909C21.6483 22.2382 21.4541 22.349 21.2434 22.416C21.0327 22.483 20.8102 22.5048 20.5905 22.4799ZM32.9105 32.7399H29.9105V27.9099C29.9105 26.6999 29.4805 25.9099 28.3905 25.9099C28.0532 25.9124 27.7247 26.0182 27.4494 26.2131C27.174 26.408 26.965 26.6826 26.8505 26.9999C26.7723 27.2349 26.7384 27.4825 26.7505 27.7299V32.7299H23.7505C23.7505 32.7299 23.7505 24.5499 23.7505 23.7299H26.7505V24.9999C27.0231 24.527 27.4195 24.1374 27.897 23.8731C28.3745 23.6088 28.9151 23.4797 29.4605 23.4999C31.4605 23.4999 32.9105 24.7899 32.9105 27.5599V32.7399Z"
+                            fill="white" />
+                    </svg>
+
+                    <!-- /linkedin -->
+                    <!-- twitter -->
+                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="52" height="52" rx="26" fill="#141414" />
+                        <path
+                            d="M36 19.8C35.2483 20.1261 34.4534 20.3416 33.64 20.44C34.4982 19.9273 35.1413 19.1207 35.45 18.17C34.6436 18.65 33.7608 18.9883 32.84 19.17C32.2245 18.5025 31.405 18.0583 30.5098 17.9068C29.6147 17.7554 28.6945 17.9053 27.8938 18.3332C27.093 18.761 26.4569 19.4425 26.0852 20.2708C25.7135 21.0991 25.6273 22.0274 25.84 22.91C24.2094 22.8275 22.6144 22.4029 21.1587 21.6638C19.7029 20.9247 18.4188 19.8877 17.39 18.62C17.0291 19.2501 16.8395 19.9638 16.84 20.69C16.8387 21.3643 17.0042 22.0286 17.3218 22.6235C17.6393 23.2185 18.099 23.7257 18.66 24.1C18.008 24.0822 17.3699 23.9073 16.8 23.59V23.64C16.8049 24.5849 17.136 25.4991 17.7373 26.2279C18.3386 26.9568 19.1733 27.4556 20.1 27.64C19.7433 27.7485 19.3729 27.8058 19 27.81C18.7419 27.807 18.4844 27.7835 18.23 27.74C18.4939 28.5528 19.0046 29.2631 19.6911 29.7721C20.3775 30.2811 21.2056 30.5635 22.06 30.58C20.6172 31.7152 18.8359 32.3348 17 32.34C16.6657 32.3411 16.3317 32.321 16 32.28C17.8744 33.4902 20.0588 34.1327 22.29 34.13C23.8297 34.146 25.3571 33.855 26.7831 33.274C28.2091 32.6931 29.505 31.8338 30.5952 30.7465C31.6854 29.6591 32.548 28.3654 33.1326 26.9409C33.7172 25.5164 34.012 23.9897 34 22.45C34 22.28 34 22.1 34 21.92C34.7847 21.3348 35.4615 20.6174 36 19.8Z"
+                            fill="white" />
+                    </svg>
+
+                    <!-- /twitter -->
+                    <!-- youtube -->
+                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="52" height="52" rx="26" fill="#141414" />
+                        <path
+                            d="M36.9991 23.71C37.0485 22.2786 36.7355 20.858 36.0891 19.58C35.6505 19.0556 35.0418 18.7017 34.3691 18.58C31.5866 18.3275 28.7926 18.224 25.9991 18.27C23.2157 18.2219 20.4318 18.3221 17.6591 18.57C17.1109 18.6697 16.6036 18.9268 16.1991 19.31C15.2991 20.14 15.1991 21.56 15.0991 22.76C14.954 24.9175 14.954 27.0824 15.0991 29.24C15.128 29.9154 15.2285 30.5858 15.3991 31.24C15.5196 31.745 15.7636 32.2123 16.1091 32.6C16.5163 33.0034 17.0354 33.2752 17.5991 33.38C19.755 33.6461 21.9273 33.7564 24.0991 33.71C27.5991 33.76 30.669 33.71 34.299 33.43C34.8765 33.3316 35.4102 33.0595 35.8291 32.65C36.109 32.3699 36.3181 32.0271 36.4391 31.65C36.7967 30.5526 36.9723 29.4041 36.959 28.25C36.9991 27.69 36.9991 24.31 36.9991 23.71ZM23.739 28.85V22.66L29.659 25.77C27.9991 26.69 25.809 27.73 23.739 28.85Z"
+                            fill="white" />
+                    </svg>
+
+                    <!-- /youtube -->
+                </div>
+            </div>
+        </footer>
+
+
+
+
+    </main>
+
+    <!-- Font link -->
+    <script src="Assets/Font/font awesome/all.min.js"></script>
+    <script src="Assets/Font/font awesome/brands.min.js"></script>
+
+    <!-- Js link -->
+    <script src="Assets/Js File/script.js"></script>
+</body>
+
+</html>

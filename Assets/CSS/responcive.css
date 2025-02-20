@@ -1,0 +1,268 @@
+        @media (max-width:1200px) {
+            .main-header-wrapper {
+                padding: 0px 30px;
+            }
+
+            .main-header-wrapper .info-wrapper {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width:768px) {
+
+            /* Navbar */
+            .top-bar {
+                text-align: start;
+                max-width: 100%;
+
+            }
+
+            .container {
+                position: relative;
+                height: auto;
+            }
+
+            .collapes {
+                display: none;
+
+            }
+
+            .icon {
+                flex-grow: 1;
+            }
+
+            .about-us .banner a {
+                padding: 18px 18px;
+            }
+
+            .contact-us {
+                margin-right: 10px;
+            }
+
+            .button-responcive {
+                display: block;
+            }
+
+            /* Navbar */
+
+
+            /* toggle show */
+            .show {
+                display: block;
+            }
+
+            .nav-ul {
+                flex-direction: column;
+                align-items: flex-start;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                padding: 20px 50px 20px 50px;
+                height: auto;
+                /* min-width: 100%; */
+                background-color: var(--grey);
+                font-weight: 500;
+                /* font-family: "Urbanist-Light"; */
+            }
+
+            .nav-ul li {
+                text-align: center;
+                font-weight: 500;
+                width: 100%;
+            }
+
+            .about-button {
+                background-color: var(--grey40);
+                width: 100%;
+
+            }
+
+            .button-responcive {
+                padding-left: 20px;
+            }
+
+            /* toggle show */
+
+
+            /* contact Info  */
+            .contact-info-item span {
+                white-space: inherit;
+            }
+
+            .banner-content {
+                padding: 90px 50px;
+            }
+
+            /* contact Info end */
+
+
+
+            .info-btn button {
+                flex: 1;
+            }
+
+
+            /* form */
+            form {
+                margin: 50px 50px;
+                padding: 16px 16px;
+            }
+
+            .privacy-policy-wrapper {
+                flex-direction: column;
+            }
+
+            .width-100 {
+                width: 100%;
+                align-items: flex-start;
+            }
+
+
+            /* /. form */
+            .main-header-wrapper {
+                flex-direction: column;
+                margin: 30px;
+            }
+
+
+            .flex-direction-column {
+                flex-direction: column;
+            }
+
+            .flex-direction-column img {
+                width: 100%;
+            }
+
+            .flex-direction-column .width {
+                width: 100%;
+            }
+
+            .explore-main-wrapper {
+                padding: 30px;
+            }
+
+            .explore-wrapper {
+                padding: 30px;
+            }
+
+            /*  */
+            .last-section-banner {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .last-section-btn button {
+                width: 100%;
+            }
+
+            .last-section-text {
+                width: 100%;
+                padding: 20px;
+            }
+
+            .last-section-btn {
+                width: 100%;
+                padding: 15px;
+            }
+
+            .domain h3,
+            .since h3 {
+                font-size: 15px;
+            }
+
+            .our-valued-card {
+                padding: 10px;
+            }
+
+            .our-valued-banner {
+                padding: 70px 20px;
+            }
+
+            .our-valued-banner img {
+                left: 15px;
+            }
+
+            /* Footer */
+
+            .footer-section-all {
+                padding: 30px 0;
+                gap: 40px;
+            }
+
+            .sub-footer {
+                display: flex;
+                flex-direction: column-reverse;
+                gap: 17px;
+            }
+
+            .main-footer {
+                display: flex;
+                flex-wrap: wrap;
+
+            }
+
+    
+
+            /* /.footer */
+            
+            .logo{
+                width: 100%;
+            }
+            
+            .email-input{
+                width: 100%;
+            }   
+        }
+        
+
+        @media (max-width:468px) {
+            .container {
+                padding: 16px;
+            }
+
+            .contact-us button {
+                padding: 14px 22px;
+            }
+
+            .banner-content {
+                padding: 90px 16px 50px 16px;
+            }
+
+            .banner-content .title h2 {
+                font-size: 28px;
+                margin-bottom: 8px;
+            }
+
+            /* sparkles */
+            .banner-content img {
+                padding-bottom: 20px;
+                left: 10px;
+            }
+
+            /* sparkles */
+
+            /* form */
+            form {
+                margin: 50px 16px;
+            }
+
+            /*  /. form */
+
+            .main-header-wrapper {
+                margin: 16px;
+            }
+
+            .explore-main-wrapper {
+                padding: 16px;
+            }
+
+            .explore-wrapper {
+                padding: 16px;
+            }
+            
+            .footer-section-all {
+                /* padding: 30px 0; */
+                gap: 20px;
+            }
+        }
