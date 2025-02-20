@@ -378,9 +378,18 @@ form {
 
 .input-control .privacy-policy {
     padding: 10px !important;
-    background-color: var(--grey10);
+    /* background-color: var(--grey10); */
     border: 1px solid var(--grey);
+    accent-color: var(--grey10);
 }
+
+.input-control .privacy-policy[type="checkbox"] {
+    appearance: var(--grey10);
+  }
+
+  .input-control .privacy-policy:checked{
+    background-color: #fff;
+  }
 
 .privacy-policy-wrapper {
     margin-top: 50px;

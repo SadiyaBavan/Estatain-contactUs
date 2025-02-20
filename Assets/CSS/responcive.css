@@ -60,7 +60,7 @@
                 display: block;
             }
 
-            .purple-btn .banner a {
+            .navbar-btn .banner a {
                 background-color: var(--grey10);
             }
 
