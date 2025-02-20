@@ -17,9 +17,26 @@
 
             }
 
+            .cancel-btn {
+                width: 18px;
+                height: 18px;
+            }
+
+            .top-bar p {
+                padding-left: 30px;
+            }
+
+            .top-bar p,
+            a {
+                text-align: left;
+                font-size: 12px;
+            }
+
             .container {
                 position: relative;
                 height: auto;
+                padding: 20px 30px;
+
             }
 
             .collapes {
@@ -32,7 +49,7 @@
             }
 
             .about-us .banner a {
-                padding: 18px 18px;
+                padding: 10px 10px;
             }
 
             .contact-us {
@@ -41,6 +58,10 @@
 
             .button-responcive {
                 display: block;
+            }
+
+            .purple-btn .banner a {
+                background-color: var(--grey10);
             }
 
             /* Navbar */
@@ -67,7 +88,6 @@
             }
 
             .nav-ul li {
-                text-align: center;
                 font-weight: 500;
                 width: 100%;
             }
@@ -78,8 +98,13 @@
 
             }
 
-            .button-responcive {
-                padding-left: 20px;
+            .icon img {
+                width: 40px;
+                height: 33px;
+            }
+
+            .icon p {
+                font-size: 22px;
             }
 
             /* toggle show */
@@ -91,8 +116,19 @@
             }
 
             .banner-content {
-                padding: 90px 50px;
+                padding: 60px 30px;
             }
+
+            .banner-wrapper {
+                padding: 0;
+            }
+
+            .banner-wrapper img {
+                left: 50px;
+                height: 30px;
+                width: 53px;
+            }
+
 
             /* contact Info end */
 
@@ -105,7 +141,7 @@
 
             /* form */
             form {
-                margin: 50px 50px;
+                margin: 50px 30px;
                 padding: 16px 16px;
             }
 
@@ -122,7 +158,8 @@
             /* /. form */
             .main-header-wrapper {
                 flex-direction: column;
-                margin: 30px;
+                padding: 0 30px;
+                gap: 20px;
             }
 
 
@@ -150,6 +187,7 @@
             .last-section-banner {
                 display: flex;
                 flex-wrap: wrap;
+                padding: 30px;
             }
 
             .last-section-btn button {
@@ -199,28 +237,31 @@
             .main-footer {
                 display: flex;
                 flex-wrap: wrap;
-
+                padding: 30px 30px;
             }
 
-    
+
 
             /* /.footer */
-            
-            .logo{
+
+            .logo {
                 width: 100%;
             }
-            
-            .email-input{
+
+            .email-input {
                 width: 100%;
-            }   
+            }
         }
-        
+
 
         @media (max-width:468px) {
             .container {
-                padding: 16px;
+                padding: 20px 16px;
             }
 
+            .top-bar p {
+                padding-left: 16px;
+            }
             .contact-us button {
                 padding: 14px 22px;
             }
@@ -250,7 +291,7 @@
             /*  /. form */
 
             .main-header-wrapper {
-                margin: 16px;
+                padding: 0 16px;
             }
 
             .explore-main-wrapper {
@@ -260,9 +301,23 @@
             .explore-wrapper {
                 padding: 16px;
             }
-            
+
             .footer-section-all {
                 /* padding: 30px 0; */
                 gap: 20px;
+            }
+
+            .main-footer {
+                padding: 30px 16px;
+            }
+
+            .all-button-wrapper {
+                width: 100%;
+
+            }
+
+            .all-button-wrapper button {
+                padding: 14px 20px;
+                width: 100%;
             }
         }
