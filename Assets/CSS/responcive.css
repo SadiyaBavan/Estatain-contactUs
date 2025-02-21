@@ -50,6 +50,7 @@
 
             .about-us .banner a {
                 padding: 10px 10px;
+                justify-content: flex-start;
             }
 
             .contact-us {

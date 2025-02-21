@@ -383,13 +383,13 @@ form {
     accent-color: var(--grey10);
 }
 
-.input-control .privacy-policy[type="checkbox"] {
+/* .input-control .privacy-policy[type="checkbox"] {
     appearance: var(--grey10);
   }
 
   .input-control .privacy-policy:checked{
     background-color: #fff;
-  }
+  } */
 
 .privacy-policy-wrapper {
     margin-top: 50px;
